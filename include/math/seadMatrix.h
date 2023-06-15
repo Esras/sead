@@ -205,8 +205,8 @@ public:
 
     Matrix44(const Self& n) = default;
 
-    Matrix44(T _00, T _01, T _02, T _03, T _10, T _11, T _12, T _13, T _20, T _21, T _22, T _23,
-             T _30, T _31, T _32, T _33);
+    Matrix44(T a00, T a01, T a02, T a03, T a10, T a11, T a12, T a13, T a20, T a21, T a22, T a23,
+             T a30, T a31, T a32, T a33);
 
     Matrix44(const Mtx33& mtx33, const Vec3& t = Vec3::zero, const Vec4& vw = Vec4::ew);
     Matrix44(const Mtx34& mtx34, const Vec4& vw = Vec4::ew);
